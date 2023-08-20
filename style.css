@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1059%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c375.201C100.977%2c383.476%2c197.633%2c493.718%2c288.515%2c448.938C376.677%2c405.498%2c355.942%2c270.584%2c395.194%2c180.479C433.527%2c92.485%2c520.166%2c21.656%2c516.431%2c-74.252C512.619%2c-172.15%2c446.61%2c-257.98%2c375.497%2c-325.37C308.371%2c-388.982%2c220.183%2c-422.94%2c129.475%2c-440.95C44.482%2c-457.825%2c-39.529%2c-440.649%2c-124.697%2c-424.681C-219.271%2c-406.95%2c-328.688%2c-411.963%2c-395.332%2c-342.557C-462.416%2c-272.693%2c-461.924%2c-163.945%2c-467.885%2c-67.272C-473.453%2c23.023%2c-465.084%2c112.951%2c-428.522%2c195.699C-391.648%2c279.154%2c-343.799%2c368.767%2c-259.646%2c404.018C-177.668%2c438.358%2c-88.583%2c367.942%2c0%2c375.201' fill='%230b2137'%3e%3c/path%3e%3cpath d='M1440 1112.9740000000002C1542.767 1116.5549999999998 1589.844 981.4010000000001 1667.498 913.994 1731.863 858.1220000000001 1826.4769999999999 830.047 1857.423 750.631 1888.076 671.966 1825.37 588.747 1827.128 504.339 1829.387 395.84299999999996 1933.413 275.587 1869.136 188.151 1806.6390000000001 103.13600000000002 1667.141 154.64800000000002 1562.173 143.91899999999998 1478.124 135.329 1396.381 111.99099999999999 1314.16 131.42899999999997 1228.973 151.56799999999998 1153.758 196.97699999999998 1088.931 255.79700000000003 1017.5740000000001 320.54200000000003 937.649 390.43100000000004 923.642 485.759 909.627 581.146 959.227 675.65 1015.767 753.741 1066.116 823.281 1156.949 843.006 1222.468 898.486 1301.787 965.652 1336.127 1109.354 1440 1112.9740000000002' fill='%23113357'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1059'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  }
+
+ .navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ }
+
+
+
+  body{
+    margin: 0;
+    font-family: Roboto
+    
+  }
+
+ .navbar a:hover {
+  background-color: #066395;
+  
+
+
+
+  
+  color: white;
+  }
+
+  .navbar a.active {
+    display: flex;
+    justify-content: center;
+    
+    
+    color: white;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  
+.nav-list {
+   
+   display: flex;
+  
+  
+  
+    
+  }
+.nav-list li {
+  
+  margin: 0 10px;
+}
+
+
+.sectiontxt {
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
+}
+h1 {
+  text-align: center;
+  
+}
+.swag {
+  text-align:justify;
+}
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 105%;
+    padding: 15px;
+    
+  }
+  
+  .grid-item {
+    
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 1.5em;
+    
+    
+  }
+  .grid-item-header {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen  and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    
+
+    .nav-list li {
+        margin: 0 10px; 
+    }
+
+    a {
+        font-size: .8em;
+    }
+    .sectiontxt {
+
+       width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+}
